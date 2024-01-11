@@ -17,6 +17,7 @@ class CupertinoStoreApp extends StatelessWidget {
     return const CupertinoApp(
       theme: CupertinoThemeData(brightness: Brightness.light),
       home: CupertinoStoreHomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

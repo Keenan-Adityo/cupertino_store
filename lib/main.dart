@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
-import 'package:provider/provider.dart';             // NEW
+import 'package:provider/provider.dart';             
 
 import 'app.dart';
-import 'model/app_state_model.dart';                 // NEW
+import 'model/app_state_model.dart';                 
 
 void main() {
  return runApp(
-   ChangeNotifierProvider<AppStateModel>(            // NEW
-     create: (_) => AppStateModel()..loadProducts(), // NEW
-     child: const CupertinoStoreApp(),               // NEW
+   ChangeNotifierProvider<AppStateModel>(            
+     create: (_) => AppStateModel()..loadProducts(), 
+     child: const CupertinoStoreApp(),               
    ),
  );
 }
